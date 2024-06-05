@@ -3,7 +3,7 @@ export class Impuesto {
   #montoBrutoAnual;
   #deducciones;
 
-  constructor() {
+  constructor(montoBrutoAnual, deducciones) {
     this.#montoBrutoAnual = montoBrutoAnual;
     this.#deducciones = deducciones;
   }

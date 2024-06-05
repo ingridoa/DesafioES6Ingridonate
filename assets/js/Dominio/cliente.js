@@ -1,5 +1,5 @@
 // 1. declaro clase
-class Cliente {
+export class Cliente {
   // 2. declaración de atributos
   #nombrecliente;
   #impuesto;
