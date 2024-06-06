@@ -6,7 +6,7 @@ export class Cliente {
   // ...
 
   // 3. Declaro constructor donde mapeo parametros a atributos
-  constructor(nombrecliente, impuesto, /*...todos los que quieras */ param3) {
+  constructor(nombrecliente, impuesto, /*...todos los que quieras */) {
     this.#nombrecliente = nombrecliente;
     this.#impuesto = impuesto;
     // todos los que tenga...
@@ -30,7 +30,10 @@ export class Cliente {
   }
   // 5. funcion de calcular el impuesto
   calcularImpuesto() {
-    return (this.#impuesto.montoButoAnual - this.#impuesto.deducciones) * 0.21;
+    const montoBrutoAnual = this.#impuesto.montoBrutoAnual;
+    const deducciones = this.#impuesto.deducciones;
+        return (montoBrutoAnual - deducciones) * 0.21;
+  
   }
 }
 
